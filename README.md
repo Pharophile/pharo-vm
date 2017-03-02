@@ -3,6 +3,7 @@ Build Status
 
 - [Spur64](https://github.com/pharo-project/pharo-vm): [![Build Status](https://travis-ci.org/pharo-project/pharo-vm.png?branch=spur64)](https://travis-ci.org/pharo-project/pharo-vm)
 - [(dev) estebanlm](https://github.com/estebanlm/pharo-vm): [![Build Status](https://travis-ci.org/estebanlm/pharo-vm.png?branch=spur64)](https://travis-ci.org/estebanlm/pharo-vm)
+- [(fork) philippeback] (https://github.com/Pharophile/pharo-vm) [![Build status](https://ci.appveyor.com/api/projects/status/55pm3lxwgamx1fqi/branch/pharophiledevelop?svg=true)](https://ci.appveyor.com/project/philippeback/pharo-vm/branch/pharophiledevelop)
 
 REQUIREMENTS
 ============
