@@ -1,7 +1,7 @@
 # Deploy in appveyor environment
 
 # deploy if repository is pharophile/pharo-vm
-if [ "$APPVEYOR_REPO_NAME" != "pharphile/pharo-vm" ]; then
+if [ "$APPVEYOR_REPO_NAME" != "pharophile/pharo-vm" ]; then
 	echo "Trying to deploy in repository: $APPVEYOR_REPO_NAME. Skipping."
 	exit 
 fi
