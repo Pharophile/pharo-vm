@@ -7,6 +7,8 @@ Development fork(s)
 
 - [estebanlm](https://github.com/estebanlm/pharo-vm) [![Build Status](https://travis-ci.org/estebanlm/pharo-vm.png)](https://travis-ci.org/estebanlm/pharo-vm) [![Windows Build status](https://ci.appveyor.com/api/projects/status/kskw07q17nphv5qy?svg=true)](https://ci.appveyor.com/project/estebanlm/pharo-vm)
 
+- [philippeback] (https://github.com/Pharophile/pharo-vm) [![Build status](https://ci.appveyor.com/api/projects/status/55pm3lxwgamx1fqi/branch/pharophiledevelop?svg=true)](https://ci.appveyor.com/project/philippeback/pharo-vm/branch/pharophiledevelop)
+
 REQUIREMENTS
 ============
 The build relies on a valid gcc, cmake and 32 bit headers installation:
