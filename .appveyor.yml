@@ -36,7 +36,7 @@ build_script:
 test_script:
   - bash -e -c "#./scripts/run-tests.sh"
 before_deploy:
-  - bash -e -c "cd scripts; ./deploy-key.sh"
+  - bash -e -c "# No need for this in this fork - cd scripts; ./deploy-key.sh"
   - bash -e -c "./scripts/deploy-before.sh"
 deploy_script:
   - bash -e -c "./scripts/deploy-bintray-appveyor.sh"
