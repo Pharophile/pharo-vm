@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+# show us what is going on.
+set -x
 
 source ./.travis_helpers.sh
 
@@ -110,7 +112,9 @@ build_osx() {
 build_windows() {
     echo "Building for Windows"
 
+	 echo "ARCH"
     echo $ARCH
+	 echo "FLAVOR"
     echo $FLAVOR
 
     build_directory="./build.${ARCH}/${FLAVOR}/"
@@ -126,9 +130,10 @@ build_windows() {
     echo "Let's build"
     # We cannot zip dbg and ast if we pass -f to just to the full thing...
     # Once this builds, let's pass -A instead of -f and put the full zip (but we should do several zips in the future)
-    bash -e ./mvm -f || exit 1
-    zip -r "${output_file}.zip" "./build/vm/"
-    # zip -r "${output_file}.zip" "./builddbg/vm/" "./buildast/vm/" "./build/vm/"
+    bash -e ./mvm -A || exit 1
+    echo "Let's zip"
+	 #zip -r "${output_file}.zip" "./build/vm/"
+    zip -r "${output_file}.zip" "./builddbg/vm/" "./buildast/vm/" "./build/vm/"
     popd
 }
 

@@ -40,4 +40,4 @@ before_deploy:
   - bash -e -c "./scripts/deploy-before.sh"
 deploy_script:
   - bash -e -c "./scripts/deploy-bintray-appveyor.sh"
-  - bash -e -c "./scripts/deploy-files.pharo.org-appveyor.sh"
+#  - bash -e -c "./scripts/deploy-files.pharo.org-appveyor.sh"
