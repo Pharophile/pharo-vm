@@ -1,16 +1,16 @@
 # Deploy in appveyor environment
 
 # deploy if repository is pharophile/pharo-vm
-if [ "$APPVEYOR_REPO_NAME" != "pharophile/pharo-vm" ]; then
-	echo "Trying to deploy in repository: $APPVEYOR_REPO_NAME. Skipping."
-	exit 
-fi
+#if [ "$APPVEYOR_REPO_NAME" != "pharophile/pharo-vm" ]; then
+#	echo "Trying to deploy in repository: $APPVEYOR_REPO_NAME. Skipping."
+#	exit 
+#fi
 
 # deploy on pharophiledevelop branch
-if [ "$APPVEYOR_REPO_BRANCH" != "pharophiledevelop" ]; then
-	echo "Trying to deploy in branch: $APPVEYOR_REPO_BRANCH. Skipping."
-	exit 
-fi
+# if [ "$APPVEYOR_REPO_BRANCH" != "pharophiledevelop" ]; then
+#	echo "Trying to deploy in branch: $APPVEYOR_REPO_BRANCH. Skipping."
+#	exit 
+#fi
 
 echo "Deploying to bintray with user: $BINTRAY_USER"
 appveyor DownloadFile https://curl.haxx.se/ca/cacert.pem
