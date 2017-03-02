@@ -1,7 +1,7 @@
 PR=${TRAVIS_PULL_REQUEST:-${APPVEYOR_PULL_REQUEST_NUMBER:-false}}
 BR=${TRAVIS_BRANCH:-${APPVEYOR_REPO_BRANCH}}
 
-if [[ $PR == "false" ]] && ( [[ "$BR" == "Cog" || "$BR" == "master" ]] ); then
+# if [[ $PR == "false" ]] && ( [[ "$BR" == "Cog" || "$BR" == "master" ]] ); then
     echo "`cat .bintray.json | .git_filters/RevDateURL.smudge`" > .bintray.json
     sed -i.bak 's/$Rev: \([0-9][0-9]*\) \$/\1/' .bintray.json
     sed -i.bak 's/$Date: \(.*\) \$/\1/' .bintray.json
@@ -50,4 +50,4 @@ if [[ $PR == "false" ]] && ( [[ "$BR" == "Cog" || "$BR" == "master" ]] ); then
 #                }
 #            }"
 #    fi
-fi
+# fi
