@@ -40,7 +40,7 @@ case "${ARCH}" in
 		productArch="ARMv6"
 		;;
 	win32x86) 
-		productDir="$productDir/build.${ARCH}/pharo.cog.spur/build" 
+		productDir="$productDir/build.${ARCH}/pharo.cog.spur" 
 		pattern="*"
 		os="win"
 		;;
