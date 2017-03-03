@@ -24,7 +24,15 @@ init:
   - echo "Windows Original Path:"
   - echo %PATH%
   - set PATH=C:\MinGW\bin;C:\MinGW\msys\1.0\bin;%PATH%;%CYG_ROOT%\bin
-  - echo %PATH
+  - echo %PATH%
+  - echo "GCC used"
+  - where gcc
+  - echo "Git used"
+  - where git
+  - echo "Bash used"
+  - where bash
+  - echo "sed used"
+  - where sed
   - echo "Git config"
   - git config --system -l
 install:
