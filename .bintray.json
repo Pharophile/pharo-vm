@@ -2,7 +2,7 @@
     "package": {
         "name": "build",
         "repo": "pharo-vm",
-		"subject": "pharo-project"
+		"subject": "pharophile"
     },
     "version": {
         "name": "$Rev$",
