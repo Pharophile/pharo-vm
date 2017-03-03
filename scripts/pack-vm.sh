@@ -41,7 +41,7 @@ case "${ARCH}" in
 		;;
 	win32x86) 
 		productDir="$productDir/build.${ARCH}/pharo.cog.spur/build" 
-		pattern="Pharo.exe PharoConsole.exe *.dll"
+		pattern="*.*"
 		os="win"
 		;;
 	win64x64) 
