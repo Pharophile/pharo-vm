@@ -29,6 +29,8 @@ init:
   - where gcc
   - echo "Which version of GCC is this now?"
   - bash -e -c "gcc --version"
+  - echo "Which i686-w64-mingw32-gcc is this now?"
+  - where i686-w64-mingw32-gcc
   - echo "Git used"
   - where git
   - echo "Bash used"
