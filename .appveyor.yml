@@ -29,6 +29,8 @@ init:
   - where gcc
   - echo "Which version of GCC is this now?"
   - bash -e -c "gcc --version"
+  - C:\MinGW\bin\gcc.exe --version
+  - C:\cygwin\bin\gcc.exe --version
   - echo "Which i686-w64-mingw32-gcc is this now?"
   - where i686-w64-mingw32-gcc
   - C:\cygwin\bin\i686-w64-mingw32-gcc.exe --version
@@ -59,6 +61,8 @@ build_script:
   - C:\cygwin\bin\i686-w64-mingw32-gcc.exe --version
   - i686-w64-mingw32-gcc.exe --version
   - bash -e -c "i686-w64-mingw32-gcc --version"
+  - C:\MinGW\bin\gcc.exe --version
+  - C:\cygwin\bin\gcc.exe --version
   - bash -e -c "cd scripts; ./build-sources.sh -a i386"
   - bash -e -c "cd opensmalltalk-vm; export THIRDPARTYCACHEDIR=../../../.thirdparty-cache; ./.travis_build.sh"
   - bash -e -c "cd scripts; ./pack-vm.sh"
