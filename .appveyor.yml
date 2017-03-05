@@ -35,6 +35,8 @@ init:
   - where sed
   - echo "Git config"
   - git config --system -l
+  - echo "What is bash thinking"
+  - bash -e -c "echo $PATH; which gcc; which bash; which git; which sed"
 install:
   - git submodule update --init --recursive
   - ps: 'Start-FileDownload "http://cygwin.com/setup-x86.exe" -FileName "setup-x86.exe"'
