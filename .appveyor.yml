@@ -49,6 +49,9 @@ build_script:
   - bash -e -c "echo $PATH; which gcc; which bash; which git; which sed"
   - echo "Which version of GCC is this now?"
   - bash -e -c "gcc --version"
+  - echo "But we compile with i686-w64-mingw32-gcc in opensmalltalk"
+  - where i686-w64-mingw32-gcc
+  - bash -e -c "which i686-w64-mingw32-gcc"
   - bash -e -c "cd scripts; ./build-sources.sh -a i386"
   - bash -e -c "cd opensmalltalk-vm; export THIRDPARTYCACHEDIR=../../../.thirdparty-cache; ./.travis_build.sh"
   - bash -e -c "cd scripts; ./pack-vm.sh"
