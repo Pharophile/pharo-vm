@@ -49,7 +49,7 @@ install:
   - git submodule update --init --recursive
   - ps: 'Start-FileDownload "http://cygwin.com/setup-x86.exe" -FileName "setup-x86.exe"'
   - ps: 'Start-FileDownload "http://cygwin.com/setup-x86_64.exe" -FileName "setup-x86_64.exe"'
-  - '%CYG_SETUP% -qnNdO -R "%CYG_ROOT%" -s "%CYG_MIRROR%" -l "%CYG_ROOT%\var\cache\setup" -P mingw64-%MINGW_ARCH%-gcc-core-5.4.0-3,mingw64-%MINGW_ARCH%-gcc-g++-5.4.0-3,mingw64-%MINGW_ARCH%-headers,mingw64-%MINGW_ARCH%-runtime,zip,mingw64-%MINGW_ARCH%-clang'
+  - '%CYG_SETUP% -dgnqNO -R "%CYG_ROOT%" -s "%CYG_MIRROR%" -l "%CYG_ROOT%\var\cache\setup" -P mingw64-%MINGW_ARCH%-gcc-core-5.4.0-3,mingw64-%MINGW_ARCH%-gcc-g++-5.4.0-3,mingw64-%MINGW_ARCH%-headers,mingw64-%MINGW_ARCH%-runtime,zip,mingw64-%MINGW_ARCH%-clang'
 build_script:
   - echo "What is bash thinking after cygwin GCC install"
   - bash -e -c "echo $PATH; which gcc; which bash; which git; which sed"
