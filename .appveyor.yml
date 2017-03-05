@@ -31,6 +31,8 @@ init:
   - bash -e -c "gcc --version"
   - echo "Which i686-w64-mingw32-gcc is this now?"
   - where i686-w64-mingw32-gcc
+  - C:\cygwin\bin\i686-w64-mingw32-gcc.exe --version
+  - i686-w64-mingw32-gcc.exe --version
   - echo "Git used"
   - where git
   - echo "Bash used"
@@ -54,6 +56,9 @@ build_script:
   - echo "But we compile with i686-w64-mingw32-gcc in opensmalltalk"
   - where i686-w64-mingw32-gcc
   - bash -e -c "which i686-w64-mingw32-gcc"
+  - C:\cygwin\bin\i686-w64-mingw32-gcc.exe --version
+  - i686-w64-mingw32-gcc.exe --version
+  - bash -e -c "i686-w64-mingw32-gcc --version"
   - bash -e -c "cd scripts; ./build-sources.sh -a i386"
   - bash -e -c "cd opensmalltalk-vm; export THIRDPARTYCACHEDIR=../../../.thirdparty-cache; ./.travis_build.sh"
   - bash -e -c "cd scripts; ./pack-vm.sh"
